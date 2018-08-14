@@ -12,6 +12,8 @@ module IntroToRuby
     announce(secret)
     secret
   end
+
+  # WRITE YOUR CODE HERE, eg: def decode_all
 end
 
 

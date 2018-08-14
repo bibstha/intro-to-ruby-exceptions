@@ -1,5 +1,5 @@
 module IntroToRuby
-  # Tasks
+  # Make changes to the method `def string_slice` so it passes the test. Note:
   #
   # 1. `string_slice` method should take from 1 to 5 arguments.
   # 2. `string_slice` method raises ArgumentError if it is more than 5 arguments.
