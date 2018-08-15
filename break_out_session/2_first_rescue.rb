@@ -3,7 +3,7 @@ module IntroToRuby
 
   # Tasks
   #
-  # 1. You are not allowed to modify decode
+  # 1. You are not allowed to modify method `decode`
   # 2. Create a method called `decode_all` that accepts an array as input.
   # 3. `decode_all` should call decode (the world's worst encryption algorithm) with each string, rescuing on Exception.
   # 4. decode will record each secret uncovered so far using announce.
@@ -12,8 +12,6 @@ module IntroToRuby
     announce(secret)
     secret
   end
-
-  # WRITE YOUR CODE HERE, eg: def decode_all
 end
 
 
