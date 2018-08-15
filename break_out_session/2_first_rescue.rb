@@ -12,6 +12,15 @@ module IntroToRuby
     announce(secret)
     secret
   end
+
+  def decode_all(secrets)
+    secrets.map do |secret|
+      begin
+        decode(secret)
+      rescue NoMethodError
+      end
+    end
+  end
 end
 
 

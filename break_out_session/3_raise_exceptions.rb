@@ -5,7 +5,17 @@ module IntroToRuby
   # 2. `string_slice` method raises ArgumentError if it is more than 5 arguments.
   # 3. `string_slice` method returns a sequential array of these strings sliced up until the third character.
   # 4. `string_slice` method raises IndexError if the string is less than 3 characters long.
-  def string_slice
+  def string_slice(*args)
+    raise ArgumentError, "More than 5 arguments not supported" if args.size > 5
+
+    # this is separated from the `map` below to make it easy to follow
+    args.each do |arg|
+      raise IndexError, "All arguments should be three or more characters in size" if arg.size < 3
+    end
+
+    args.map do |arg|
+      arg[0, 3]
+    end
   end
 end
 
